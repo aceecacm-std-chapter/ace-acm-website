@@ -452,6 +452,11 @@ ul {
     margin: 0 auto;
 }
 
+#faculty .avatar-container {
+    width: 180px;
+    height: 180px;
+}
+
 .team-card {
     background: var(--dark-light);
     padding: 30px 20px;
@@ -501,6 +506,277 @@ ul {
 .team-card .role {
     color: var(--secondary);
     font-size: 0.9rem;
+}
+
+/* --- HOD Info Modal --- */
+.hod-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 15, 30, 0.95);
+    backdrop-filter: blur(8px);
+    overflow: auto;
+}
+
+.hod-modal.show {
+    display: block;
+    animation: fadeIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hod-modal-inner {
+    margin: 5% auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    background: linear-gradient(135deg, var(--dark-light), rgba(0, 210, 255, 0.1));
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 210, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.close-hod-modal {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.close-hod-modal:hover {
+    color: var(--secondary);
+}
+
+.hod-modal-left {
+    width: 35%;
+    padding-right: 40px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hod-avatar-large {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+}
+
+.hod-avatar-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hod-modal-left h3 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.hod-modal-left .role {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.hod-modal-right {
+    width: 65%;
+    padding-left: 40px;
+}
+
+#hodTypingText {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+    font-family: inherit;
+    text-align: justify;
+    white-space: pre-wrap;
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: var(--secondary);
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 850px) {
+    .hod-modal-inner {
+        flex-direction: column;
+        padding: 30px;
+        margin: 10% auto;
+    }
+    .hod-modal-left {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .hod-modal-right {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+/* --------------------------- */
+
+/* Inspirations Section */
+.inspiration-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.inspiration-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: calc(50% - 15px);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.inspiration-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top right, rgba(0, 210, 255, 0.15) 0%, transparent 40%);
+    z-index: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.inspiration-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 210, 255, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 210, 255, 0.1);
+}
+
+.inspiration-card:hover::before {
+    background: radial-gradient(circle at top right, rgba(0, 210, 255, 0.25) 0%, transparent 50%);
+}
+
+.inspiration-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+    background: radial-gradient(circle at top right, rgba(0, 210, 255, 0.1) 0%, transparent 60%);
+}
+
+.inspiration-card:hover .inspiration-avatar {
+    border-color: var(--secondary);
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+    background: radial-gradient(circle at top right, rgba(0, 210, 255, 0.2) 0%, transparent 60%);
+    transform: scale(1.08);
+}
+
+.inspiration-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transform-origin: top center;
+    filter: grayscale(30%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
+}
+
+.inspiration-card:hover .inspiration-avatar img {
+    filter: grayscale(0%);
+    transform: scale(1.15);
+}
+
+.inspiration-info {
+    z-index: 1;
+}
+
+.inspiration-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.inspiration-info .role {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.inspiration-info .quote {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+    .inspiration-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .inspiration-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
 }
 
 /* Gallery Section */

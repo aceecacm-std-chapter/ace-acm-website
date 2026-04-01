@@ -230,7 +230,7 @@ SSC, CBSE – Warangal Public School, Warangal – April 1991`;
     const bhargaviTypingText = document.getElementById('bhargaviTypingText');
 
     const bhargaviInfoText = `About
-    e
+    
 Mrs.J.Bhargavi has over 13 years of professional experience, including 11 years in teaching and 2 years in industry.She has achieved multiple academic and professional certifications such as Microsoft Technology Associate, NVIDIA certification, and Oracle Academy Trainer.She qualified national - level exams like NET(2019, 2024) and SET(2017).She has completed several courses through NPTEL, Coursera, and Infosys Springboard.Additionally, she is a certified AI mentor by TCS and has published 2 UGC papers and 2 conference papers.`;
 
     let bhargaviTypingInterval;

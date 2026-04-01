@@ -98,7 +98,73 @@
             </div>
         </div>
     </section>
+    <!-- Inspirations Section -->
+    <section id="inspirations" class="section team">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Inspirations</h2>
+                <div class="underline"></div>
+            </div>
 
+            <div class="inspiration-grid">
+                <!-- Inspiration 1 -->
+                <div class="inspiration-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="inspiration-avatar">
+                        <img src="images/GK-Sir-2.png" alt="Prof. Y.V. Gopala Krishna Murthy">
+                    </div>
+                    <div class="inspiration-info">
+                        <h3>Prof. Y.V. Gopala Krishna Murthy</h3>
+                        <p class="role">General Secretary</p>
+                        <p class="quote">“Every opportunity you need is already around you - waiting for someone willing
+                            to step forward. Take initiative, lead with courage, and don’t fear mistakes. The leaders of
+                            tomorrow are the ones who choose to act today.”</p>
+                    </div>
+                </div>
+                <!-- Inspiration 2 -->
+                <div class="inspiration-card" data-aos="fade-left" data-aos-delay="200">
+                    <div class="inspiration-avatar">
+                        <img src="Screenshot 2026-04-01 110628.png" alt="Mr. Y. V. Raghu Vamsi">
+                    </div>
+                    <div class="inspiration-info">
+                        <h3>Mr. Y. V. Raghu Vamsi</h3>
+                        <p class="role">Chief Operating Officer,
+                            Office Of The General Secretary</p>
+                        <p class="quote">“Great ideas begin the journey, but execution defines the destination. Stay
+                            focused, work with purpose, and finish what you start. Consistent effort is what turns
+                            ambition into achievement.”
+                        </p>
+                    </div>
+                </div>
+                <!-- Inspiration 3 -->
+                <div class="inspiration-card" data-aos="fade-right" data-aos-delay="300">
+                    <div class="inspiration-avatar">
+                        <img src="WhatsApp Image 2026-04-01 at 11.45.09 AM.jpeg" alt="Mrs. Mamatha Rao Pasumarthi"
+                            style="object-position: 50% 20%;">
+                    </div>
+                    <div class="inspiration-info">
+                        <h3>Mrs. Mamatha Rao Pasumarthi</h3>
+                        <p class="role">Director – Administration & Operations Management</p>
+                        <p class="quote">“Your future will not be defined by your degree alone, but by the skills you
+                            build and the problems you solve. Stay curious, keep learning, and challenge
+                            yourself—because growth begins where comfort ends.”</p>
+                    </div>
+                </div>
+                <!-- Inspiration 4 -->
+                <div class="inspiration-card" data-aos="fade-left" data-aos-delay="400">
+                    <div class="inspiration-avatar">
+                        <img src="Principal-ACE-EngineeringCollege.png" alt="Principal">
+                    </div>
+                    <div class="inspiration-info">
+                        <h3>Dr. N. Sudhakar Reddy</h3>
+                        <p class="role">Principal, ACE Engineering College</p>
+                        <p class="quote">“Talent opens doors, but discipline keeps them open. Build strong habits, stay
+                            consistent, and respect the learning process. Your dedication today is what will shape your
+                            success tomorrow.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Events Section -->
     <section id="events" class="section events bg-alt">
         <div class="container">
@@ -111,7 +177,8 @@
                 <!-- Placeholder Event -->
                 <div class="event-card coming-soon" data-aos="fade-up" data-aos-delay="100">
                     <div class="event-img">
-                        <div class="placeholder-bg" style="display: flex; justify-content: center; align-items: center; min-height: 200px; background: rgba(0, 210, 255, 0.1);">
+                        <div class="placeholder-bg"
+                            style="display: flex; justify-content: center; align-items: center; min-height: 200px; background: rgba(0, 210, 255, 0.1);">
                             <i class="fas fa-calendar-alt" style="font-size: 4rem; color: var(--secondary);"></i>
                         </div>
                     </div>
@@ -126,7 +193,7 @@
     </section>
 
     <!-- Faculty Section -->
-    <section id="faculty" class="section team">
+    <section id="faculty" class="section team bg-alt">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Faculty Sponsors</h2>
@@ -135,27 +202,39 @@
 
             <div class="team-grid">
                 <!-- Faculty Sponsor 2 -->
-                <div class="team-card highlight-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="avatar-container">
-                        <img src="images/hod.jpg" alt="HOD - Dr. Kavitha Soppari">
+                <div class="team-card highlight-card hod-card" id="hodCard" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="avatar-container" id="hodPhoto" title="Click to read message" style="cursor: pointer;">
+                        <img src="images/hod.jpg" alt="HOD - Dr. Kavitha Soppari" id="hodPhotoImg">
                     </div>
                     <h3>Dr. Kavitha Soppari</h3>
                     <p class="role">PROFESSOR & HEAD OF THE DEPARTMENT CSE(AI&ML)</p>
+                    <p class="quote"
+                        style="margin-top: 15px; font-style: italic; color: var(--text-dark); font-size: 0.9rem; line-height: 1.5;">
+                        “Your journey here is not just about completing a course—it’s about discovering your potential.
+                        Ask questions, build skills beyond the classroom, and never settle for average. The effort you
+                        invest today will define the engineer and the person you become tomorrow.”</p>
                 </div>
                 <!-- Faculty Sponsor 1 -->
                 <div class="team-card highlight-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="avatar-container">
-                        <img src="images/faculty_sponsor.jpg" alt="Faculty Sponsor" style="object-position: top;">
+                    <div class="avatar-container" id="bhargaviPhoto" title="Click to read message"
+                        style="cursor: pointer;">
+                        <img src="images/faculty_sponsor.jpg" alt="Faculty Sponsor - J.BHARGAVI"
+                            style="object-position: top;" id="bhargaviPhotoImg">
                     </div>
                     <h3>J.BHARGAVI</h3>
                     <p class="role">ASSISTANT PROFESSOR & FACULTY SPONSOR</p>
+                    <p class="quote"
+                        style="margin-top: 15px; font-style: italic; color: var(--text-dark); font-size: 0.9rem; line-height: 1.5;">
+                        “Don’t measure your progress by marks alone—measure it by what you can actually do. Apply what
+                        you learn, practice consistently, and push beyond your limits. Real growth begins when you start
+                        learning beyond the syllabus.”</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="section team bg-alt">
+    <section id="team" class="section team">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Meet Our Team</h2>
@@ -190,7 +269,8 @@
                 <!-- Treasurer -->
                 <div class="team-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="avatar-container">
-                        <img src="images/team_avatar.png" alt="Treasurer">
+                        <img src="WhatsApp Image 2026-04-01 at 12.45.16 PM.jpeg" alt="Treasurer"
+                            style="object-position: top;">
                     </div>
                     <h3>BALA SINDHU KONIDENA</h3>
                     <p class="role">Treasurer</p>
@@ -209,7 +289,7 @@
     </section>
 
     <!-- Student Members Section -->
-    <section id="student-members" class="section team">
+    <section id="student-members" class="section team bg-alt">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2>Our Student Gallery</h2>
@@ -320,10 +400,12 @@
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" style="min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(10, 25, 47, 0.5); border: 1px solid rgba(0, 210, 255, 0.2);">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"
+                    style="min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(10, 25, 47, 0.5); border: 1px solid rgba(0, 210, 255, 0.2);">
                     <i class="fas fa-images" style="font-size: 5rem; color: var(--secondary); margin-bottom: 20px;"></i>
                     <h3 style="color: var(--white);">Gallery Loading Soon!</h3>
-                    <p style="color: var(--text-dark); margin-top: 10px; text-align: center; padding: 0 20px;">We're currently curating our best memories.</p>
+                    <p style="color: var(--text-dark); margin-top: 10px; text-align: center; padding: 0 20px;">We're
+                        currently curating our best memories.</p>
                 </div>
             </div>
         </div>
@@ -377,6 +459,50 @@
     <div id="imageModal" class="modal">
         <span class="close-modal">&times;</span>
         <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- HOD Info Modal -->
+    <div id="hodInfoModal" class="hod-modal">
+        <div class="hod-modal-inner">
+            <span class="close-hod-modal">&times;</span>
+            <div class="hod-modal-left">
+                <div class="hod-avatar-large">
+                    <img src="images/hod.jpg" alt="Dr. Kavitha Soppari">
+                </div>
+                <h3>Dr. Kavitha Soppari</h3>
+                <p class="role">PROFESSOR & HEAD OF THE DEPARTMENT CSE(AI&ML)</p>
+                <p class="quote"
+                    style="margin-top: 20px; font-style: italic; color: var(--text); font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
+                    “Your journey here is not just about completing a course—it’s about discovering your potential. Ask
+                    questions, build skills beyond the classroom, and never settle for average. The effort you invest
+                    today will define the engineer and the person you become tomorrow.”</p>
+            </div>
+            <div class="hod-modal-right">
+                <p id="hodTypingText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bhargavi Info Modal -->
+    <div id="bhargaviInfoModal" class="hod-modal">
+        <div class="hod-modal-inner">
+            <span class="close-bhargavi-modal close-hod-modal" id="closeBhargaviModalBtn">&times;</span>
+            <div class="hod-modal-left">
+                <div class="hod-avatar-large">
+                    <img src="images/faculty_sponsor.jpg" alt="J.BHARGAVI" style="object-position: top;">
+                </div>
+                <h3>J.BHARGAVI</h3>
+                <p class="role">ASSISTANT PROFESSOR & FACULTY SPONSOR</p>
+                <p class="quote"
+                    style="margin-top: 20px; font-style: italic; color: var(--text); font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
+                    “Don’t measure your progress by marks alone—measure it by what you can actually do. Apply what you
+                    learn, practice consistently, and push beyond your limits. Real growth begins when you start
+                    learning beyond the syllabus.”</p>
+            </div>
+            <div class="hod-modal-right">
+                <p id="bhargaviTypingText"></p>
+            </div>
+        </div>
     </div>
 
     <!-- AOS JS -->
